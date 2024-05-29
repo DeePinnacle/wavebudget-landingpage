@@ -40,7 +40,7 @@ const TestimonySection = () => {
                     el:'.swiper-pagination',
                     clickable: true,
                 }}
-                modules = {[Autoplay, Pagination, Navigation]}
+                modules = {[Autoplay]}
                 className = 'mySwiper'
               >
               {testimonies.map((item, index) => (
@@ -62,7 +62,7 @@ const TestimonySection = () => {
                                 </div>
                             </div>
                         </div>
-                        <div className='my-4p-2 mx-auto mt-5 w-1/2 text-center'>
+                    <div className='my-4p-2 mx-auto mt-5 w-1/2 text-center'>
                             <p>{ item.state }</p>
                         </div>
                       {/* slider container ends here */}
@@ -70,9 +70,9 @@ const TestimonySection = () => {
               ))}
             </Swiper>
           {/* navigation buttons */}
-          <div className='btn-wrapper lg:mt-5'>
+            {/* <div className='btn-wrapper lg:mt-5'>
              <div className='swiper-pagination'></div>
-          </div>
+          </div>*/}
       </div>
         {/* testimonial wrapper ends here */}
     </div>
